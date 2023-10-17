@@ -1,0 +1,341 @@
+.navigation_bar {
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+    background-color: red;
+    height: 3em;
+    width: 100%;
+}
+
+.home_link, .nav_link, .search_link, .cart_link, .profile_link {
+    font-size: large;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.home_link, .nav_link,.search_link, .cart_link, .profile_link {
+    text-decoration: none;
+}
+
+.home_link {
+    color: red;
+    font-family: "Rockwell", serif;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.home_link:hover, .nav_link:hover, .profile_link:hover, .clothing_selection_button:hover {
+    color: gold;
+}
+
+.nav_link, .profile_link, .filter_button {
+    color: white;
+    font-family: sans-serif;
+}
+
+.profile_link {
+    pointer-events: none;
+    user-select: none;
+    margin-left: auto;
+    z-index: 5;
+}
+
+.user_closebtn, .user_openbtn {
+    z-index: 5;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: sans-serif;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    line-height: 1em;
+}
+
+.user_openbtn {
+    color: white;
+}
+
+.user_closebtn {
+    color: gold;
+}
+
+.user_openbtn:hover {
+    color: gold;
+}
+
+.user_closebtn:hover {
+    color: white;
+}
+
+.feature_product_slideshow {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature_product_slide {
+    display: none;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    margin: 0em;
+    width: inherit;
+    height: inherit;
+}
+
+@-webkit-keyframes feature_product_slide {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes feature_product_slide {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.feature_product_image {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature_product_caption {
+    position: absolute;
+    bottom: 0em;
+    left: 0em;
+    display: block;
+    color: red;
+    -webkit-text-stroke: 2px white;
+    font-family: "Rockwell", serif;
+    font-size: xxx-large;
+    font-weight: bolder;
+    padding: 0.5em;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.previous_feature_product_slide, .next_feature_product_slide {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -75px;
+    padding: 0.25em;
+    color: black;
+    background: none;
+    border: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.previous_feature_product_slide {
+    left: 0;
+}
+
+.next_feature_product_slide {
+    right: 0;
+}
+
+.previous_feature_product_slide:hover, .next_feature_product_slide:hover {
+    color: gold;
+}
+
+.webpage_label {
+    color: red;
+    font-family: "Rockwell";
+    text-align: center;
+}
+
+.clothing_selection_section_left, .clothing_selection_section_right {
+    display: inline-block;
+    padding: 0.5em;
+    width: 45%;
+}
+
+.clothing_selection_section_right {
+    float: right;
+}
+
+.clothing_selection_section_left_area {
+    margin-bottom: 0.5em;
+}
+
+.clothing_selection_section_right_area {
+    margin-bottom: 2em;
+}
+
+.clothing_selection_button, .clothing_selection_checkbox, .clothing_selection_label {
+    display: inline-block;
+}
+
+.clothing_selection_button {
+    background: none;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 0;
+}
+
+.clothing_selection_checkbox {
+    display: none;
+}
+
+.clothing_selection_label, .clothing_selection_button {
+    color: red;
+    margin-right: 0.5em;
+    user-select: none;
+}
+
+.clothing_selection_checkbox + .clothing_selection_label:before {
+    content:"";
+    color: red;
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    vertical-align: top;
+    text-align: center;
+    line-height: 0.85em;
+    background-clip: content-box;
+    background-size: cover;
+    border: 0.125em solid red;
+    border-radius: 0.25em;
+    margin-right: 0.1em;
+}
+
+.clothing_selection_checkbox + .clothing_selection_label:before, .clothing_selection_label, .clothing_selction_order {
+    font-size: small;
+}
+
+.clothing_selection_checkbox:hover + .clothing_selection_label:before {
+    content:"✔";
+}
+
+.clothing_selection_checkbox:checked + .clothing_selection_label:before {
+    content:"✔";
+    color: white;
+    background-color: red;
+}
+
+.clothing_selection_order, .filter_button {
+    float: right;
+}
+
+.filter_button {
+    border: none;
+    background-color: red;
+    border-radius: 0.25em;
+    padding: 0.25em;
+    font-weight: bold;
+}
+
+.filter_button:hover {
+    background-color: gold;
+}
+
+.clothing_catalog {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em;
+    width: 90%;
+}
+
+.clothing_catalog_item {
+    display: inline-block;
+    margin: 0.5em;
+    color: red;
+    width: 10em;
+    height: 20em;
+    font-size: large;
+    padding: 0.25em;
+}
+
+.clothing_catalog_item_image {
+    display: block;
+    height: 75%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clothing_catalog_item_name {
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+.clothing_catalog_item_price {
+    margin-bottom: 0.25em;
+}
+
+.clothing_catalog_item_quantity {
+    font-size: x-small;
+    margin-bottom: 0.25em;
+}
+
+.clothing_catalog_item_cart_count {
+    font-size: x-small;
+}
+
+.clothing_catalog_item_button {
+    width: 100%;
+    color: white;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: red;
+    border: none;
+    padding: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.clothing_catalog_item_button:hover {
+    background-color: gold;
+}
+
+.profile_form {
+    display: flex;
+    margin: auto;
+    width: 20em;
+    height: 50%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile_label {
+    color: red;
+    font-size: small;
+    font-family: "Rockwell", serif;
+    user-select: none;
+}
+
+.profile_input, .profile_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 2em;
+}
+
+.profile_button {
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    background-color: red;
+}
+
+.profile_button:hover {
+    background-color: gold;
+}

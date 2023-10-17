@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font: 1em arial;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*background-color: rgb(249, 252, 255);*/
+    margin: 0em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+label, input {
+    display: block;
+}
+
+/* Register and login form */
+.register-form span input, .form-button {
+    padding: 5px 5px;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 1px black inset;
+}
+
+.form-input {
+    padding: 5px 5px;
+    margin: 3px 5px;
+    border-radius: 2px;
+}
+
+.form-button {
+    font-weight: bold;
+    margin: auto;
+    padding: 5px 5px;
+    width: 10rem;
+    border-radius: 2px;
+}
+
+    .form-button:hover {
+        background-color: lightsteelblue;
+    }
+
+.blue-link {
+    font-weight: bold;
+    color: rgb(202, 88, 88);
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    width: 7rem;
+    padding: .5rem;
+    margin: auto;
+}
+
+    a:hover {
+        color: #808080;
+    }
+ 
+
+/* Register form body content */
+.content {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    padding: 100px 0;
+}
+
+
+.No-border {
+    display: block;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 5px;
+    font-weight: bold;
+    color: rgb(62, 171, 190);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.list-content {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.formbtn {
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 2px;
+    font-weight: bold;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    background: #5fd0e4;
+    border-width: 3px;
+    margin: auto;
+}
+
+.formbtn:hover {
+    border-color: rgb(36, 36, 36);
+}
+
+.form-profile {
+    /*display: flex;
+    flex-direction: column;*/
+    font-family: sans-serif;
+    text-align: center;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-height: 200px;
+    margin: 10px;
+}
+
+/* Cart */
+.button-border {
+    border-top: 2px solid grey; 
+    border-left: 2px solid grey; 
+    border-bottom: 2px solid black; 
+    border-right: 2px solid black;
+}
+
+/* Manage employees */
+
+
+/* Background for login and register page */
+.decal {
+    background-color: #fafafa;
+    
+}
+/* Background words */
+.title {
+    padding: .1rem .5rem 1rem .5rem;
+    color: #c5c5c5;
+    margin: auto;
+}
+
+.floating-title {
+    position: absolute;
+    -webkit-transform:scale(2,3);
+    -moz-transform:scale(2,3); /* Firefox */
+    -ms-transform:scale(2,3); /* IE 9 */
+    -o-transform:scale(2,3); /* Opera */
+    transform:scale(2,3); /* W3C */
+    color: rgb(151, 3, 3);
+    font-size: 200px;
+    top: 30%;
+    left: 40%;
+    opacity: .3;
+    z-index: -1;
+}
+
+.decalr {
+    background: linear-gradient(0deg, #fafafa 70%, #e3eaeb 30%);
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.floating-titler {
+    position: absolute;
+    font-size: 70px;
+    top: 0;
+    left: 50px;
+    color: rgb(151, 3, 3);
+    opacity: .3;
+    z-index: -1;
+}
+
+.login {
+    margin-top: 22rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.login_form, .register-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.register-form {
+    border: 4px solid black;
+    padding: 0rem 1rem 1rem 0rem;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.r2header {
+    color: #fff;
+    background-color: rgb(173, 0, 0);
+    width: fit-content();
+    padding: 0;
+    margin: 0;
+    border-radius: 0 0 10px 0;
+}
+
+.desc {
+    font-size: 10px;
+    color: #fff;
+    background-color: rgb(173, 0, 0);
+    margin-bottom: 0;
+    padding: 1px 1px 0 1px;
+    margin-left: 0;
+    width: 5rem;
+    text-align: center;
+}
+
+span {
+    padding: 6rem 1rem 3rem 1rem;
+    margin: auto;
+}
+
+.reg {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: 20rem;
+    border-radius: 0 3px 3px 3px;
+}
+
+
+.sqlpar {
+    padding: 10px 20px;
+}
+
+.sqlpara {
+    padding: 1px 15px;
+    margin: 10px 5px 1px 5px;
+}
+
+/* Classes used in search page */
+.search {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+    font-size: 1rem;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(202, 88, 88);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Used in product page */
+.product-info {
+    margin-left: 50px;
+}
+
+/* Used in add product page */
+.select_desc {
+    margin-bottom: 15px;
+    padding: 1px 1px 0 1px;
+    margin-left: 0;
+    width: 100%;
+    height: 25px;
+}
+
+
+/* Sidebar */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: red; /* Red*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+  
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: gold;
+}
+
+.last-menu-item {
+    margin-top: auto;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn, .openbtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    z-index: 5;
+    font-size: 40px;
+    cursor: pointer;
+    background: none;
+    padding: 1px 5px;
+    border: none;
+    outline: none;
+}
+
+.search-input {
+    height: 20px;
+    margin-top:8px;
+}
+
+.search-form span {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-button {
+    display: block;
+    outline: none;
+    background: none;
+    color: lightgrey;
+    transform:rotate(45deg);
+    font-size: 30px;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.search-button:hover {
+    color: white;
+}
+
+#search {
+    max-height: 20px;
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    color: black;
+}
+
+.closebtn {
+    color: gold;
+}
+
+.openbtn:hover {
+    color: gold;
+}
+
+.closebtn:hover {
+    color: white;
+}
